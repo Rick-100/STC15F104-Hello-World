@@ -13,7 +13,6 @@ functions to print an unsigned int in hex or decimal
 Windows bat file for compiling / put in same directory as my_stc_.h and this source file
 
 
-set PATH="C:\SDCC_compiler\bin";%PATH%
 sdcc -mmcs51  --iram-size 128 --xram-size 0 --code-size 4088 --verbose hello_num_1.c -o hello_num_1.ihx
 packihx hello_num_1.ihx > hello_num_1.hex
 pause
