@@ -7,7 +7,6 @@
 /* 
 Windows bat file for compiling. Put in same folder as this source file and my_stc_.h
 
-set PATH="C:\SDCC_compiler\bin";%PATH%
 sdcc -mmcs51  --iram-size 128 --xram-size 0 --code-size 4088 --verbose hello.c -o hello_bin.ihx
 packihx hello_bin.ihx > hello.hex
 pause
